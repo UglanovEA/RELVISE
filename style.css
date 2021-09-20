@@ -37,6 +37,8 @@ html, body {
 /* ---------------------------------------------------- */
 .wrapper {
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 /* ---------------------------------------------------- */
@@ -45,6 +47,17 @@ html, body {
   margin: 0 auto;
   padding: 0px 15px;
   box-sizing: content-box;
+}
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 /* ---------------------------------------------------- */
 .header {
@@ -108,3 +121,103 @@ html, body {
     font-size:inherit;
   }
 }
+/* ---------------------------------------------------- */
+.page {
+  flex: 1 1 auto;
+}
+.page_main-block {
+}
+/* ---------------------------------------------------- */
+.main-block {
+  position: relative;
+}
+.main-block__body {
+  max-width: 400px;
+  position: relative;
+  padding: 120px 0px 191px 0px;
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  .main-block__body {
+    padding: 184px 0px 191px 0px;
+  }
+}
+.main-block__body > *:not(:last-child) {
+  margin: 0px 0px 35px 0px;
+}
+.main-block__title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.37;
+  letter-spacing: 0.2px;
+}
+@media (min-width: 992px) {
+  .main-block__title {
+    font-size: 58px;
+  }
+}
+.main-block__text {
+  color: #585757;
+  font-size: 20px;
+  line-height: 1.5;
+}
+@media (min-width: 479px) {
+  .main-block__text {
+    color: #737373;
+  }
+}
+.main-block__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0px;
+}
+.main-block__button {
+  min-height: 48px;
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 37px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-align: center;
+  padding: 0px 36px;
+  margin: 10px 0px;
+}
+@media (min-width: 479px) {
+  .main-block__button {
+    flex: inherit;
+  }
+}
+@media (min-width: 479px) {
+  .main-block__button:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.main-block__button_orange {
+  background-color: #ff7b47;
+  color:#ffffff;
+}
+.main-block__button_border {
+  color: #0d5c63;
+  border: 1px solid #0d5c63;
+}
+.main-block__image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 1300px) {
+  .main-block__image img{
+    object-position: right;
+  }
+}
+@media (max-width: 992px) {
+  .main-block__image {
+    opacity: 0.5;
+  }
+}
+/* ---------------------------------------------------- */
