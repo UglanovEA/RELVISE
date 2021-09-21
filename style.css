@@ -135,6 +135,8 @@ html, body {
 }
 .page__advantages {
 }
+.page__practice {
+}
 /* ---------------------------------------------------- */
 .header-block {
   text-align: center;
@@ -377,5 +379,82 @@ html, body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.1px;
+}
+/* ---------------------------------------------------- */
+.practice {
+  padding: 0px 0px 40px 0px;
+}
+@media (min-width: 767px) {
+  .practice {
+    padding: 40px 0px 80px 0px;
+  }
+}
+@media (min-width: 993px) {
+  .practice {
+    padding: 115px 0px 80px 0px;
+  }
+}
+.practice__header {
+  margin: 0px 0px 25px 0px;
+}
+@media (min-width: 767px) {
+  .practice__header {
+    margin: 0px 0px 45px 0px;
+  }
+}
+.practice__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -20px -30px;
+}
+.practice__column {
+  flex: 0 1 100%;
+  margin: 0px 0px 30px 0px;
+}
+@media (min-width: 630px) {
+  .practice__column {
+    flex: 0 1 50%;
+    padding: 0px 20px;
+  }
+}
+@media (min-width: 1040px) {
+  .practice__column {
+    flex: 0 1 25%;
+    padding: 0px 20px;
+  }
+}
+.item-practice {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.item-practice__content {
+  flex: 1 1 auto;
+  padding: 30px;
+}
+.item-practice__link {
+  color: inherit;
+  display: inline-block;
+}
+.item-practice__link:hover {
+  text-decoration: underline;
+}
+.item-practice__link:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+.item-practice__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+}
+.item-practice__text {
+  color: #737373;
+  line-height: 1.4;
+}
+.item-practice__image {
+  display: block;
+  padding: 0px 0px 60% 0px;
 }
 /* ---------------------------------------------------- */
