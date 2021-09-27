@@ -139,6 +139,8 @@ html, body {
 }
 .page__who {
 }
+.page__clients {
+}
 /* ---------------------------------------------------- */
 .header-block {
   text-align: center;
@@ -567,5 +569,29 @@ html, body {
 .item-who__text {
   color: #737373;
   line-height: 1.4;
+}
+/* ---------------------------------------------------- */
+.clients {
+  padding: 30px 0px;
+}
+@media (min-width: 767px) {
+  .clients {
+    padding: 50px 0px;
+  }
+}
+.clients__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.clients__item {
+  min-width: 140px;
+  flex: 0 1 16.6667%;
+  text-align: center;
+  padding: 8px 15px;
+}
+.clients__item img {
+  max-width: 100%;
 }
 /* ---------------------------------------------------- */
