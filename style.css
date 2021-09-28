@@ -689,21 +689,39 @@ html, body {
   }
 }
 /* ---------------------------------------------------- */
-
 .getintouch {
-  padding: 80px 0px 135px 0px;
+  padding: 50px 0px 50px 0px;
 }
-.getintouch__container {
+@media (min-width: 992px) {
+  .getintouch {
+    padding: 80px 0px 135px 0px;
+  }
 }
 .getintouch__header {
-  margin: 0px 0px 80px 0px;
+  margin: 0px 0px 30px 0px;
+}
+@media (min-width: 767px) {
+  .getintouch__header {
+    margin: 0px 0px 50px 0px;
+  } 
+}
+@media (min-width: 992px) {
+  .getintouch__header {
+    margin: 0px 0px 80px 0px;
+  } 
 }
 .getintouch__items {
-  display: flex;
-  align-items: center;
+  margin: 0px -15px;
+}
+@media (min-width: 992px) {
+  .getintouch__items {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+  }
 }
 .getintouch__item {
-  flex: 0 1 33.333%
+  flex: 0 1 33.333%;
 }
 .item-getintouch {
   display: flex;
@@ -716,6 +734,12 @@ html, body {
 .item-getintouch_active {
   color: #ffffff;
   background-color: #252B42;
+  padding: 50px 15px;
+}
+@media (min-width: 992px) {
+  .item-getintouch_active {
+    padding: 80px 15px;
+  }
 }
 .item-getintouch_active .item-getintouch__button {
   color:#ffffff;
@@ -728,9 +752,6 @@ html, body {
 .item-getintouch > *:not(:last-child) {
   margin: 0px 0px 15px 0px;
 }
-.item-getintouch__icon {
-}
-
 .item-getintouch__emails {
   display: flex;
   flex-direction: column;
@@ -769,3 +790,4 @@ html, body {
   background-color: #ff7b47;
   color: #ffffff;
 }
+/* ---------------------------------------------------- */
