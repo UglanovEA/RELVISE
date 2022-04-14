@@ -61,6 +61,18 @@ body {
 	left: 0;
 	object-fit: cover;
 }
+/*------------ SCROLL BAR ------------*/
+::-webkit-scrollbar {
+	width: 0.7rem;
+	background-color: #818181;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #0d5c63;
+	border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #187981;
+}
 /* ---------------------------------------------------- */
 .header {
 	width: 100%;
