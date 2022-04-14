@@ -347,7 +347,7 @@ body {
 }
 @media (min-width: 992px) {
 	.advantages {
-		padding: 80px 0px;
+		padding: 120px 0px 80px;
 	}
 }
 .advantages__header {
@@ -411,11 +411,6 @@ body {
 @media (min-width: 767px) {
 	.practice {
 		padding: 40px 0px 80px 0px;
-	}
-}
-@media (min-width: 993px) {
-	.practice {
-		padding: 115px 0px 80px 0px;
 	}
 }
 .practice__header {
@@ -488,7 +483,7 @@ body {
 }
 @media (min-width: 950px) {
 	.who {
-		padding: 80px 0px 130px 0px;
+		padding: 80px 0px;
 	}
 }
 .who__header {
