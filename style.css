@@ -511,6 +511,11 @@ body {
 	flex: 0 0 57%;
 	padding-bottom: 35%;
 }
+@media (max-width: 950px) {
+	.who__video {
+		padding-bottom: 57%;
+	}
+}
 .who__video:not(:last-child) {
 	margin: 0px 0px 50px 0px;
 }
